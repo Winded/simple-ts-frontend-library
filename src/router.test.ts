@@ -1,6 +1,6 @@
 import { RouteMapping, Router, RouteResult } from "./router";
 
-describe('Router', () => {
+describe('router', () => {
     const config: RouteMapping = {
         home: {
             match: /^\//,

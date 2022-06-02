@@ -5,7 +5,7 @@ interface TestStateModel {
     text: string;
 }
 
-describe('State', () => {
+describe('state', () => {
     let state: State<TestStateModel>;
     let currentState: Readonly<TestStateModel> = {
         value: 1,
