@@ -20,9 +20,10 @@ Parameters for routes are captured from the regular expression groups.
 
 ## element-hooks
 
-Process DOM node trees and look for specified element names. These element names will
-trigger specified functions, passing the element as parameter. The function should return
-a boolean indicating whether we want to continue to inspect the node's children or not.
+Process DOM node trees and look for elements with specified selectors.
+When an element matches a selector, the corresponding function will be invoked,
+having the element as the first parameter and `invokeHooks` function as the second
+parameter. You use the latter to invoke further hooks on the element's children.
 
 You can use this to build a component-based application with native HTML elements.
 
